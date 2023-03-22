@@ -1,0 +1,45 @@
+{
+  "call-number": {
+    "source": {
+      "type": "registry",
+      "id": "mx.ferreyra.callnumber@0.0.2"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "uk.co.workingedge.phonegap.plugin.launchnavigator": {
+    "source": {
+      "type": "registry",
+      "id": "uk.co.workingedge.phonegap.plugin.launchnavigator@^5.0.5"
+    },
+    "is_top_level": true,
+    "variables": {
+      "GOOGLE_API_KEY_FOR_ANDROID": "{AIzaSyAZ-kqYo3DslRI2VIuvP5GIK7OK-U9n3AQ}",
+      "OKHTTP_VERSION": "3.12.0"
+    }
+  },
+  "cordova-plugin-x-socialsharing": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-x-socialsharing@6.0.4"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "es6-promise-plugin": {
+    "source": {
+      "type": "registry",
+      "id": "es6-promise-plugin@^4.1.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-inappbrowser": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-inappbrowser@5.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
