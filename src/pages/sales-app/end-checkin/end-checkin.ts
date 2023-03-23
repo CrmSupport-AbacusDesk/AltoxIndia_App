@@ -38,7 +38,6 @@ export class EndCheckinPage {
   city_name: any = [];
   data: any = {};
   checkin_data: any = [];
-  orderType: any = '';
   checkin: any = {};
   checkinForm: FormGroup;
   checkinFormWithNewDealer: FormGroup;
@@ -129,7 +128,6 @@ export class EndCheckinPage {
       if (result['statusCode'] == 200) {
         // this.service.dismissLoading();
         this.checkin_data = result['checkin_data'];
-        this.orderType = result['order_type'];
         this.pending_checkin_id = this.checkin_data['checkin_id']
         this.new_retailer_id = this.checkin_data['dr_id']
         this.checkin.dr_name = this.checkin_data.dr_name;

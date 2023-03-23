@@ -87,12 +87,12 @@
             <div class="mid" [ngClass]="{'mt0' : row.order_status=='Draft' }">
                 <div class="content-info">
                     <div class="left-info">
-                        <div class="circle" *ngIf="order_type == 'Primary' && constant.UserLoggedInData.id==row.created_by && row.created_by_type=='channel partner'">S</div>
-                        <div class="circle" *ngIf="order_type == 'Primary' && constant.UserLoggedInData.id!=row.created_by && row.created_by_type!='channel partner'">{{row.order_creator.substring(0,1).toUpperCase()}}</div>
+                        <div class="circle" *ngIf="order_type == 'Primary' && constant.UserLoggedInData.id==row.created_by && row.created_by_type=='Distributor'">S</div>
+                        <div class="circle" *ngIf="order_type == 'Primary' && constant.UserLoggedInData.id!=row.created_by && row.created_by_type!='Distributor'">{{row.order_creator.substring(0,1).toUpperCase()}}</div>
                     </div>
                     <div class="right-info">
-                        <p *ngIf="order_type == 'Primary' && constant.UserLoggedInData.id==row.created_by && row.created_by_type=='channel partner'"> Created By : Self</p>
-                        <p *ngIf="order_type == 'Primary' && constant.UserLoggedInData.id!=row.created_by && row.created_by_type!='channel partner'"> Created By : {{row.order_creator | titlecase}}</p>
+                        <p *ngIf="order_type == 'Primary' && constant.UserLoggedInData.id==row.created_by && row.created_by_type=='Distributor'"> Created By : Self</p>
+                        <p *ngIf="order_type == 'Primary' && constant.UserLoggedInData.id!=row.created_by && row.created_by_type!='Distributor'"> Created By : {{row.order_creator | titlecase}}</p>
                         <p *ngIf="order_type == 'Secondary'"> Retailer : {{row.dr_name.toUpperCase()}}</p>
                         <p> Total Item : {{row.order_item  ? row.order_item : '0'}}</p>
                     </div>

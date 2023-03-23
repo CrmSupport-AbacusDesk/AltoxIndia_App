@@ -46,7 +46,7 @@ export class AddDealerPage {
 
     if(this.type == 1)
     {
-      this.title = 'Channel Partner';
+      this.title = 'Distributor';
     }
 
     if(this.type == 3)

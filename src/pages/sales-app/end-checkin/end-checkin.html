@@ -21,7 +21,7 @@
                         </div>
                         <div class="right-info">
                             <p *ngIf="checkin_data.dr_type == '3'">Dealer</p>
-                            <p *ngIf="checkin_data.dr_type == '1'">Channel Partner</p>
+                            <p *ngIf="checkin_data.dr_type == '1'">Distributor</p>
                             <p *ngIf="checkin_data.dr_type == '7'">Direct Dealer</p>
                             <p> {{!checkin_data.dr_name ? 'N/A' : checkin_data.dr_name | titlecase}}</p>
                             <p *ngIf="checkin_data.email"> {{checkin_data.email ? checkin_data.email : 'N/A'}}</p>
@@ -69,7 +69,7 @@
 
         <ng-container>
             <div class="forword-page flat-item mt16">
-                <ng-container *ngIf="orderType.toLowerCase()== 'primary' || orderType.toLowerCase()== 'both'">
+                <ng-container >
                     <a class="no-height"
                         *ngIf="((checkin_data.dr_type== '1')||(checkin_data.dr_type== '7') )&& checkin_data.dr_type!= '11'&&checkin_data.order_flag == '0'"
                         (click)="goTo('Primary')">
